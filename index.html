@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Enter Password to Watch Video</title>
+</head>
+<body style="font-family: sans-serif; text-align: center; margin-top: 100px;">
+  <h2>An InterView (2025)</h2>
+  <p>Please enter the password to access the thesis video:</p>
+  <input type="password" id="pw" style="padding: 8px; font-size: 16px;">
+  <button onclick="check()" style="padding: 8px 16px; font-size: 16px;">Submit</button>
+  <p id="msg" style="color: red; margin-top: 20px;"></p>
+
+  <script>
+    function check() {
+      const password = document.getElementById("pw").value;
+      if (password === "thesisaninterview2025") {
+        window.location.href = "https://youtu.be/R5NF0zTQW-w";
+      } else {
+        document.getElementById("msg").innerText = "Incorrect password. Please try again.";
+      }
+    }
+  </script>
+</body>
+</html>
